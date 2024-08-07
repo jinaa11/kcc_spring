@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;HelloController.java&apos; to &apos;hello-kosa3/src/main/java/com.kosa.controller&apos;&#x0D;&#x0A;- Original project: &apos;hello-kosa2&apos;&#x0D;&#x0A;- Destination element: &apos;hello-kosa3/src/main/java/com.kosa.controller&apos;&#x0D;&#x0A;- Original element: &apos;com.kosa.controlle.HelloController.java&apos;" description="Copy compilation unit" destination="=hello-kosa3/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.kosa.controller" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.kosa.controlle{HelloController.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1695693466766" units="1" version="1.0"/>
+</session>

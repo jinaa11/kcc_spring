@@ -1,0 +1,27 @@
+package org.zerock.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.zerock.domain.SampleDTO;
+
+import lombok.extern.log4j.Log4j;
+import lombok.extern.slf4j.Slf4j;
+
+@Controller
+@RequestMapping("/sample/*")
+@Log4j
+public class SampleController {
+	@GetMapping("/basic")
+	public void basicGet() {
+		log.info("basic~~");
+	}
+	
+	@GetMapping("/ex01")
+	public String ex01(SampleDTO dto) {
+		log.info("~~ ex01 ~~");
+		log.info("dto: " + dto);
+		
+		return "ex01";
+	}
+}

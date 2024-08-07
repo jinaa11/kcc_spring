@@ -1,0 +1,6 @@
+package org.zerock.domain;
+
+// VO 객체(DB 데이터 값을 읽고 쓸 때 사용, 폼에서 넘어오는 객체) vs DTO 객체()
+public class SampleDTO {
+	
+}

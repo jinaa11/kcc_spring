@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+
+	<bean id="logAspect" class="kosa.di.LoggingAspect" />
+	
+	<aop:config>
+		<!-- 표현식 - 접근 제어자: public, 리턴 타입: 무관, 패키지명: kosa.di.*, Service로 끝나는 클래스명, Service로 끝나는 메소드명(파라미터 무관) -->
+		<aop:pointcut expression="execution(public * kosa.di.*Service.*Service(..))" 
+			id="servicePointCut"/>
+			<aop:aspect id="loggintAspect" ref="logAspect">
+				<aop:around method="logging" pointcut-ref="servicePointCut"/>
+			</aop:aspect>
+	</aop:config>
+</beans>
