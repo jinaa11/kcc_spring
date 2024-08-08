@@ -1,4 +1,4 @@
-GitRepositoriesView.GitDirectories=C\:\\Users\\dolsa\\git\\hello-kosa\\.git;D\:\\DouZone\\workspace\\spring_work\\git_test5\\.git;
-GitRepositoriesView.GitDirectories.relative=C\:\\Users\\dolsa\\git\\hello-kosa\\.git;git_test5\\.git;
+GitRepositoriesView.GitDirectories=C\:\\work\\spring\\spring_work2\\git_test5\\.git;C\:\\Users\\dolsa\\git\\hello-kosa\\.git;C\:\\work\\spring\\.git;
+GitRepositoriesView.GitDirectories.relative=git_test5\\.git;C\:\\Users\\dolsa\\git\\hello-kosa\\.git;C\:\\work\\spring\\.git;
 core_autoIgnoreDerivedResources=false
 eclipse.preferences.version=1
