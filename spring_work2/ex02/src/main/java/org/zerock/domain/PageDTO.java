@@ -14,6 +14,7 @@ public class PageDTO {
   private int total;
   private Criteria cri;
 
+  // total: 실제 글갯수
   public PageDTO(Criteria cri, int total) {
 
     this.cri = cri;
