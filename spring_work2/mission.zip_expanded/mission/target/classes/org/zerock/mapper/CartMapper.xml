@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.zerock.mapper.CartMapper">
+	<insert id="addCart">
+		INSERT INTO CartItem2 (cartItemId, userId, productId,
+		quantity, productName, price)
+		VALUES (cartItem_seq.nextval, #{userId}, #{productId},
+		#{quantity}, #{productName}, #{price})
+	</insert>
+
+	<select id="getCart" resultType="org.zerock.domain.CartVO">
+		SELECT cartItemId, userId, productId, quantity, productName, price
+		FROM CartItem2
+		where userId = #{userId}
+	</select>
+
+	<select id="getCartByProduct" resultType="org.zerock.domain.CartVO">
+		SELECT cartItemId, userId, productId, quantity, productName, price
+		FROM CartItem2
+		WHERE userId = #{userId} AND productId = #{productId}
+	</select>
+
+	<update id="updateCart">
+		UPDATE CartItem2
+		SET quantity = #{quantity}
+		WHERE cartItemId = #{cartItemId}
+	</update>
+
+	<delete id="deleteCart">
+		DELETE FROM CartItem2
+		WHERE cartItemId = #{cartItemId}
+	</delete>
+</mapper>
